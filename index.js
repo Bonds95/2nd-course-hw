@@ -34,18 +34,17 @@ alert(num)
 //task 8
 let age = prompt('сколько вам лет?')
 alert(age)
-//task 9
+// task 9
 let user = {
     name: 'Sergey', 
     userAge: 27,
     isAdmin: true,
-    cityOfResidence: 'Sochi',
+    'city of residence': 'Sochi',
 }
 user.userAge = 28
-delete(user.cityOfResidence) 
+delete(user['city of residence']) 
 let info = prompt("Какую информацию хотите узнать о пользователе?")
-alert(user.userAge)
-
+alert(user.info = info)
 //task 10
 let userName = prompt('укажите ваше имя')
 alert(`Привет,${userName}!`)
