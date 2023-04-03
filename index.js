@@ -150,7 +150,7 @@
 
 
 // for (let friday = 2; friday <= 31; friday++) {
-    
+
 //     if (friday += 7) {
 //         console.log(`сегодня пятница ${friday} число - заполните отчетность`);
 //     }
@@ -161,15 +161,74 @@
 
 // task 1
 
-function count (a, b) {
-    if (a > b) { return a
-        
-    } else { return b
-        
+function count(a, b) {
+    if (a > b) {
+        return a
+
+    } else {
+        return b
+
     }
 }
 
-console.log(count(7,5));
+console.log(count(7, 5));
 
 // task 2
+
+function check(num) {
+    if (num % 2 == 0) {
+        return 'число четное'
+
+    } else {
+        return 'число нечетное'
+
+    }
+}
+
+console.log(check(2023));
+
+// task 3
+
+
+const counter = (rootCounter) => {
+    return rootCounter ** 2
+}
+
+
+console.log(counter(12));
+
+// task 4
+
+function greetingForm(question) {
+    let userAnswer = prompt(question)
+    
+    if (userAnswer <= 0 || isNaN(userAnswer)) {
+        return alert('вы ввели неправильное число')
+
+    } else if (userAnswer > 0 && userAnswer < 13) {
+        return alert('Привет, друг!')
+
+    }
+    else { return alert('Здравствуйте!') }
+}
+
+greetingForm('Сколько вам лет?')
+
+// task 5
+
+
+function notANumber(a, b) {
+
+    if (isNaN(a) || isNaN(b)) {
+        return alert('одно или оба значения не являются числом')
+
+    } else {
+        return alert(a * b)
+    }
+
+}
+
+notANumber(3, 4)
+
+
 
