@@ -87,13 +87,42 @@
 //         break;
 // }
 
-// task 9
+// // task 9
 
-let clientOS = Number(prompt('1-android, 0-ios'))
-let clientDeviceYear = Number(prompt('год выпуска вашего телефона'))
+// let clientOS = Number(prompt('1-android, 0-ios'))
+// let clientDeviceYear = Number(prompt('год выпуска вашего телефона'))
 
-if (clientOS == 0 && clientDeviceYear >= 2015) {alert('Установите версию приложения для iOS по ссылке')}
-else if (clientOS == 0 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для iOS по ссылке') }
-else if (clientOS == 1 && clientDeviceYear >= 2015) { alert('Установите версию приложения для Android по ссылке') }
-else if (clientOS == 1 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для Android по ссылке') }
-else {}
+// if (clientOS == 0 && clientDeviceYear >= 2015) {alert('Установите версию приложения для iOS по ссылке')}
+// else if (clientOS == 0 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для iOS по ссылке') }
+// else if (clientOS == 1 && clientDeviceYear >= 2015) { alert('Установите версию приложения для Android по ссылке') }
+// else if (clientOS == 1 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для Android по ссылке') }
+// else {}
+
+// Homework 4
+
+// // task 1
+
+// let x = 1
+// while (x < 3) {
+//     alert('hi')
+//     x++
+// }
+
+// // task 2
+
+// let y = 1
+// while (y < 6) {
+//     console.log(y)
+//     y++
+// }
+
+// // task 3
+
+// for (let index = 7; index < 23; index++) {
+//    console.log(index);
+    
+// }
+
+
+
+
