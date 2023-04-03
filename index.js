@@ -120,9 +120,41 @@
 
 // for (let index = 7; index < 23; index++) {
 //    console.log(index);
-    
+
 // }
 
+// // task 4
+
+// let obj = {
+//     'Коля':200,
+//     'Вася':300,
+//     'Петя':400,
+// }
+// for (key in obj){
+//     alert(`${key} - зарплата ${obj[key]} долларов`)
+// }
+
+// // task 5
+
+
+// let n = 1000
+// let num = 0
+// while (n > 50) {
+//     num++
+//     n = n/2
+// }
+// console.log(n);
+// console.log(num);
+
+// task 6
+
+
+for (let friday = 2; friday <= 31; friday++) {
+    
+    if (friday += 7) {
+        console.log(`сегодня пятница ${friday} число - заполните отчетность`);
+    }
 
 
 
+}
