@@ -146,15 +146,30 @@
 // console.log(n);
 // console.log(num);
 
-// task 6
+// // task 6
 
 
-for (let friday = 2; friday <= 31; friday++) {
+// for (let friday = 2; friday <= 31; friday++) {
     
-    if (friday += 7) {
-        console.log(`сегодня пятница ${friday} число - заполните отчетность`);
+//     if (friday += 7) {
+//         console.log(`сегодня пятница ${friday} число - заполните отчетность`);
+//     }
+
+
+
+// Homework 5
+
+// task 1
+
+function count (a, b) {
+    if (a > b) { return a
+        
+    } else { return b
+        
     }
-
-
-
 }
+
+console.log(count(7,5));
+
+// task 2
+
