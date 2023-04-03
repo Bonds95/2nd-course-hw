@@ -1,50 +1,99 @@
 
-//task 1
-let a = 20
-alert(a)
-//task 2
-let firstIphoneRelease = 2007
-alert(`год выпуска первого IPhone ${firstIphoneRelease}`)
-//task 3
-let jsFounder = 'Brendan Eich'
-alert(`создатель языка JavaScript ${jsFounder}`)
-//task 4
-let value1 = 10
-let value2 = 2
-alert(`10+2=${value1 + value2}`)
-alert(`10-2=${value1 - value2}`)
-alert(`10*2=${value1 * value2}`)
-alert(`10/2=${value1 / value2}`)
-//task 5
-let result = 2 ** 5
-alert(result)
-//task 6
-let c = 9
-let d = 2
-alert(c % d)
-//task 7
-let num = 1
-num += 5
-num -= 3
-num *= 7
-num /= 3
-num++
-num--
-alert(num)
-//task 8
-let age = prompt('сколько вам лет?')
-alert(age)
+// // task 1
+
+// let password = 'пароль'
+// let question = prompt('введите пароль')
+// if (question == password) {alert('пароль введен верно')
+
+// } else {alert('пароль неверный')
+
+// }
+
+// // task 2
+
+// let c = 2
+// let result = (c > 0 && c < 10) ? 'correct' : 'wrong'
+// console.log(result);
+
+// // task 3
+
+// let d = 10
+// let e = 101
+// let result = (d > 100 || e > 100) ? 'true' : 'false'
+// console.log(result);
+
+// // task 4
+
+// let a = '2';
+// let b = '3';
+// alert(+a + +b);
+
+// // task 5
+
+// let monthNumber = Number(prompt('какой сейчас месяц по счету?'))
+
+// switch (monthNumber) {
+//     case 1:
+//     case 2:
+//     case 12:
+//         console.log('winter');
+//         break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         console.log('spring');
+//         break;
+//     case 6:
+//     case 7:
+//     case 8:
+//         console.log('summer');
+//         break;
+//     case 9:
+//     case 10:
+//     case 11:
+//         console.log('autumn');
+//         break;
+
+//     default:
+//         console.log('error');
+//         break;
+// }
+
+// // task 7
+
+// let value = prompt('введите любое число')
+
+// value = Math.abs(Number(value))
+// console.log(value);
+// if (value%2==0) {alert('число четное')
+
+// } else if (value%2==1) {alert('число нечетное')
+// }
+// else {alert('это не число')
+
+// }
+
+// // task 8
+
+// let clientOS = Number(prompt('1-android, 0-ios'))
+// switch (clientOS) {
+//     case 0:
+//         console.log('Установите версию приложения для iOS по ссылке');
+//         break;
+//     case 1:
+//         console.log('Установите версию приложения для Android по ссылке');
+//         break;
+//     default:
+//         break;
+// }
+
 // task 9
-let user = {
-    name: 'Sergey', 
-    userAge: 27,
-    isAdmin: true,
-    'city of residence': 'Sochi',
-}
-user.userAge = 28
-delete(user['city of residence']) 
-let info = prompt("Какую информацию хотите узнать о пользователе?")
-alert(user.info = info)
-//task 10
-let userName = prompt('укажите ваше имя')
-alert(`Привет,${userName}!`)
+
+let clientOS = Number(prompt('1-android, 0-ios'))
+let clientDeviceYear = Number(prompt('год выпуска вашего телефона'))
+
+if (clientOS == 0 && clientDeviceYear >= 2015) {alert('Установите версию приложения для iOS по ссылке')}
+else if (clientOS == 0 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для iOS по ссылке') }
+else if (clientOS == 1 && clientDeviceYear >= 2015) { alert('Установите версию приложения для Android по ссылке') }
+else if (clientOS == 1 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для Android по ссылке') }
+else {}
