@@ -201,7 +201,7 @@ console.log(counter(12));
 
 function greetingForm(question) {
     let userAnswer = prompt(question)
-    
+
     if (userAnswer <= 0 || isNaN(userAnswer)) {
         return alert('вы ввели неправильное число')
 
@@ -230,5 +230,45 @@ function notANumber(a, b) {
 
 notANumber(3, 4)
 
+// task 6
 
+function cubeCounter(d) {
+    let addedAmount = prompt(d)
 
+    if (isNaN(addedAmount)) {
+        return alert(' значениe не являeтся числом')
+
+    }
+    else {
+        alert(`${addedAmount} в кубе = ${addedAmount ** 2}`)
+    }
+}
+
+cubeCounter('введите число от 0 до 10')
+
+// task 7
+
+function getCircleArea() {
+    return Math.PI * (this.radius ** 2)
+}
+
+function getCirclePerimeter() {
+    return 2 * Math.PI * this.radius
+}
+
+let circle1 = {
+    radius: 12,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+}
+
+let circle2 = {
+    radius: 33,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle2.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getPerimeter());
