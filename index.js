@@ -87,13 +87,188 @@
 //         break;
 // }
 
-// task 9
+// // task 9
 
-let clientOS = Number(prompt('1-android, 0-ios'))
-let clientDeviceYear = Number(prompt('год выпуска вашего телефона'))
+// let clientOS = Number(prompt('1-android, 0-ios'))
+// let clientDeviceYear = Number(prompt('год выпуска вашего телефона'))
 
-if (clientOS == 0 && clientDeviceYear >= 2015) {alert('Установите версию приложения для iOS по ссылке')}
-else if (clientOS == 0 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для iOS по ссылке') }
-else if (clientOS == 1 && clientDeviceYear >= 2015) { alert('Установите версию приложения для Android по ссылке') }
-else if (clientOS == 1 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для Android по ссылке') }
-else {}
+// if (clientOS == 0 && clientDeviceYear >= 2015) {alert('Установите версию приложения для iOS по ссылке')}
+// else if (clientOS == 0 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для iOS по ссылке') }
+// else if (clientOS == 1 && clientDeviceYear >= 2015) { alert('Установите версию приложения для Android по ссылке') }
+// else if (clientOS == 1 && clientDeviceYear < 2015) { alert('Установите облегченную версию приложения для Android по ссылке') }
+// else {}
+
+// Homework 4
+
+// // task 1
+
+// let x = 1
+// while (x < 3) {
+//     alert('hi')
+//     x++
+// }
+
+// // task 2
+
+// let y = 1
+// while (y < 6) {
+//     console.log(y)
+//     y++
+// }
+
+// // task 3
+
+// for (let index = 7; index < 23; index++) {
+//    console.log(index);
+
+// }
+
+// // task 4
+
+// let obj = {
+//     'Коля':200,
+//     'Вася':300,
+//     'Петя':400,
+// }
+// for (key in obj){
+//     alert(`${key} - зарплата ${obj[key]} долларов`)
+// }
+
+// // task 5
+
+
+// let n = 1000
+// let num = 0
+// while (n > 50) {
+//     num++
+//     n = n/2
+// }
+// console.log(n);
+// console.log(num);
+
+// // task 6
+
+
+// for (let friday = 2; friday <= 31; friday++) {
+
+//     if (friday += 7) {
+//         console.log(`сегодня пятница ${friday} число - заполните отчетность`);
+//     }
+
+
+
+// Homework 5
+
+// task 1
+
+function count(a, b) {
+    if (a > b) {
+        return a
+
+    } else {
+        return b
+
+    }
+}
+
+console.log(count(7, 5));
+
+// task 2
+
+function check(num) {
+    if (num % 2 == 0) {
+        return 'число четное'
+
+    } else {
+        return 'число нечетное'
+
+    }
+}
+
+console.log(check(2023));
+
+// task 3
+
+
+const counter = (rootCounter) => {
+    return rootCounter ** 2
+}
+
+
+console.log(counter(12));
+
+// task 4
+
+function greetingForm(question) {
+    let userAnswer = prompt(question)
+
+    if (userAnswer <= 0 || isNaN(userAnswer)) {
+        return alert('вы ввели неправильное число')
+
+    } else if (userAnswer > 0 && userAnswer < 13) {
+        return alert('Привет, друг!')
+
+    }
+    else { return alert('Здравствуйте!') }
+}
+
+greetingForm('Сколько вам лет?')
+
+// task 5
+
+
+function notANumber(a, b) {
+
+    if (isNaN(a) || isNaN(b)) {
+        return alert('одно или оба значения не являются числом')
+
+    } else {
+        return alert(a * b)
+    }
+
+}
+
+notANumber(3, 4)
+
+// task 6
+
+function cubeCounter(d) {
+    let addedAmount = prompt(d)
+
+    if (isNaN(addedAmount)) {
+        return alert(' значениe не являeтся числом')
+
+    }
+    else {
+        alert(`${addedAmount} в кубе = ${addedAmount ** 2}`)
+    }
+}
+
+cubeCounter('введите число от 0 до 10')
+
+// task 7
+
+function getCircleArea() {
+    return Math.PI * (this.radius ** 2)
+}
+
+function getCirclePerimeter() {
+    return 2 * Math.PI * this.radius
+}
+
+let circle1 = {
+    radius: 12,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+}
+
+let circle2 = {
+    radius: 33,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+}
+
+console.log(circle1.getArea());
+console.log(circle2.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getPerimeter());
