@@ -126,11 +126,11 @@
 // // task 4
 
 // let obj = {
-//     'Коля':200,
-//     'Вася':300,
-//     'Петя':400,
+//     'Коля': 200,
+//     'Вася': 300,
+//     'Петя': 400,
 // }
-// for (key in obj){
+// for (key in obj) {
 //     alert(`${key} - зарплата ${obj[key]} долларов`)
 // }
 
@@ -146,129 +146,276 @@
 // console.log(n);
 // console.log(num);
 
-// // task 6
+// // task 6 ?????????
+
+// let friday = 7
+// for (let day = 1; day <= 31; day++) {
+
+//     if ((day - friday) % 7 == 0) {
+//         console.log(`сегодня пятница ${day} число - заполните отчетность`);
+//     }
+// }
 
 
-// for (let friday = 2; friday <= 31; friday++) {
+// // Homework 5
 
-//     if (friday += 7) {
-//         console.log(`сегодня пятница ${friday} число - заполните отчетность`);
+// // task 1
+
+// function count(a, b) {
+//     if (a > b) {
+//         return a
+
+//     } else {
+//         return b
+
+//     }
+// }
+
+// console.log(count(7, 5));
+
+// // task 2
+
+// function check(num) {
+//     if (num % 2 == 0) {
+//         return 'число четное'
+
+//     } else {
+//         return 'число нечетное'
+
+//     }
+// }
+
+// console.log(check(2023));
+
+// // task 3
+
+
+// const counter = (rootCounter) => {
+//     return rootCounter ** 2
+// }
+
+
+// console.log(counter(12));
+
+// // task 4
+
+// function greetingForm() {
+//     let userAnswer = prompt('Сколько вам лет?')
+
+//     if (userAnswer <= 0 || isNaN(userAnswer)) {
+//         return alert('вы ввели неправильное число')
+
+//     } else if (userAnswer > 0 && userAnswer < 13) {
+//         return alert('Привет, друг!')
+
+//     }
+//     else { return alert('Здравствуйте!') }
+// }
+
+// greetingForm()
+
+// // task 5
+
+
+// function notANumber(a, b) {
+
+//     if (isNaN(a) || isNaN(b)) {
+//         return alert('одно или оба значения не являются числом')
+
+//     } else {
+//         return alert(a * b)
 //     }
 
+// }
+
+// notANumber(3, 4)
+
+// // task 6
+
+// function cubeCounter() {
+//     let addedAmount = prompt('введите число от 0 до 10')
+
+//     if (isNaN(addedAmount)) {
+//         return alert(' значениe не являeтся числом')
+
+//     }
+//     else {
+//        return alert(`${addedAmount} в кубе = ${addedAmount ** 2}`)
+//     }
+// }
+
+// cubeCounter()
+
+// // task 7
+
+// function getCircleArea() {
+//     return Math.PI * (this.radius ** 2)
+// }
+
+// function getCirclePerimeter() {
+//     return 2 * Math.PI * this.radius
+// }
+
+// let circle1 = {
+//     radius: 12,
+//     getArea: getCircleArea,
+//     getPerimeter: getCirclePerimeter,
+// }
+
+// let circle2 = {
+//     radius: 33,
+//     getArea: getCircleArea,
+//     getPerimeter: getCirclePerimeter,
+// }
+
+// console.log(circle1.getArea());
+// console.log(circle2.getArea());
+// console.log(circle1.getPerimeter());
+// console.log(circle2.getPerimeter());
 
 
-// Homework 5
+// Homework 6
 
-// task 1
+task 1
 
-function count(a, b) {
-    if (a > b) {
-        return a
+let arrow = [1, 5, 4, 10, 0, 3]
 
-    } else {
-        return b
+for (let i = 0; i < arrow.length; i++) {
+    if (arrow[i] == 10) break
+    console.log(arrow[i]);
 
-    }
 }
-
-console.log(count(7, 5));
 
 // task 2
 
-function check(num) {
-    if (num % 2 == 0) {
-        return 'число четное'
+let numArrow = [1, 5, 4, 10, 0, 3]
 
-    } else {
-        return 'число нечетное'
+console.log(numArrow.indexOf(4));
 
-    }
-}
-
-console.log(check(2023));
 
 // task 3
 
+let joinArrow = [1, 3, 5, 10, 20]
 
-const counter = (rootCounter) => {
-    return rootCounter ** 2
-}
+const summary = joinArrow.join(' ')
+console.log(summary);
 
+task 4
 
-console.log(counter(12));
+[[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+let mass = []
+for (let index = 0; index < 3; index++) {
+    let mass2 = []
 
-// task 4
+    for (let i = 0; i < 4; i++) {
+        mass2.push(1)
 
-function greetingForm(question) {
-    let userAnswer = prompt(question)
-
-    if (userAnswer <= 0 || isNaN(userAnswer)) {
-        return alert('вы ввели неправильное число')
-
-    } else if (userAnswer > 0 && userAnswer < 13) {
-        return alert('Привет, друг!')
 
     }
-    else { return alert('Здравствуйте!') }
-}
+    mass.push(mass2)
 
-greetingForm('Сколько вам лет?')
+
+
+}
+console.log(mass);
+
+
 
 // task 5
 
+let pushArrow = [1, 1, 1]
+pushArrow.push(2, 2, 2)
 
-function notANumber(a, b) {
+console.log(pushArrow);
 
-    if (isNaN(a) || isNaN(b)) {
-        return alert('одно или оба значения не являются числом')
+// task 6 ???
 
-    } else {
-        return alert(a * b)
-    }
+let arr = [9, 8, 7, 'a', 6, 5]
 
-}
-
-notANumber(3, 4)
-
-// task 6
-
-function cubeCounter(d) {
-    let addedAmount = prompt(d)
-
-    if (isNaN(addedAmount)) {
-        return alert(' значениe не являeтся числом')
-
-    }
-    else {
-        alert(`${addedAmount} в кубе = ${addedAmount ** 2}`)
-    }
-}
-
-cubeCounter('введите число от 0 до 10')
+sortArr = arr.sort()
+popArr = sortArr.pop()
+console.log(popArr);
+console.log(sortArr);
 
 // task 7
 
-function getCircleArea() {
-    return Math.PI * (this.radius ** 2)
+
+
+// function numsCheck() {
+//     let nums = [9, 8, 7, 6, 5]
+//     question = prompt('введите число')
+//     if (question = nums[key]) {
+//         alert('содержится')
+
+//     } else {
+//         alert('не сожержится')
+
+//     }
+// }
+
+// numsCheck()
+
+// task 8
+
+let string = 'abcdef'
+let arrStr = string.split('')
+console.log(arrStr);
+revStr = arrStr.reverse()
+console.log(revStr)
+let jArr = revStr.join('')
+console.log(jArr);
+
+// task 9
+
+[[1, 2, 3,],[4, 5, 6]]
+
+let arrow = [[1, 2, 3,],[4, 5, 6]]
+let str = arrow.join(',').split(',')
+console.log(str);
+
+// task 10
+
+let arrow = [6, 2, 3, 6, 5, 3, 4]
+for (let i = 0; i < arrow.length; i++) {
+  if (i < arrow.length - 1) {
+    console.log(arrow[i] + arrow[i + 1]);
+  } else {
+    console.log(arrow[i])
+  }
+
 }
 
-function getCirclePerimeter() {
-    return 2 * Math.PI * this.radius
+
+
+// task 11
+
+
+let array = [2, 3, 4, 5]
+let array2 = array.map(el => el ** 2)
+console.log(array2);
+
+// task 12
+
+
+let someWords = ['hi', 'how', 'are', 'you', '?']
+let symbolWords
+function countingSymbols() {
+  let wordsSplit = someWords.map(el => (el.split('')))
+  symbolWords = wordsSplit.map(el => el.length)
+  return symbolWords
 }
 
-let circle1 = {
-    radius: 12,
-    getArea: getCircleArea,
-    getPerimeter: getCirclePerimeter,
-}
+countingSymbols(someWords)
+console.log(symbolWords)
 
-let circle2 = {
-    radius: 33,
-    getArea: getCircleArea,
-    getPerimeter: getCirclePerimeter,
-}
+task 13
 
-console.log(circle1.getArea());
-console.log(circle2.getArea());
-console.log(circle1.getPerimeter());
-console.log(circle2.getPerimeter());
+let numbers = [1, 2, -10, 5, -7, 8, -2]
+ let negative
+function negativeNumbers () {
+  negative = numbers.filter(el => (el < 0))
+  return negative
+}
+negativeNumbers(numbers)
+
+console.log(negative);
