@@ -274,70 +274,70 @@
 // console.log(circle2.getPerimeter());
 
 
-// Homework 6
+// // Homework 6
 
-task 1
+// // task 1
 
-let arrow = [1, 5, 4, 10, 0, 3]
+// let arrow = [1, 5, 4, 10, 0, 3]
 
-for (let i = 0; i < arrow.length; i++) {
-    if (arrow[i] == 10) break
-    console.log(arrow[i]);
+// for (let i = 0; i < arrow.length; i++) {
+//     if (arrow[i] == 10) break
+//     console.log(arrow[i]);
 
-}
+// }
 
-// task 2
+// // task 2
 
-let numArrow = [1, 5, 4, 10, 0, 3]
+// let numArrow = [1, 5, 4, 10, 0, 3]
 
-console.log(numArrow.indexOf(4));
-
-
-// task 3
-
-let joinArrow = [1, 3, 5, 10, 20]
-
-const summary = joinArrow.join(' ')
-console.log(summary);
-
-task 4
-
-[[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
-let mass = []
-for (let index = 0; index < 3; index++) {
-    let mass2 = []
-
-    for (let i = 0; i < 4; i++) {
-        mass2.push(1)
+// console.log(numArrow.indexOf(4));
 
 
-    }
-    mass.push(mass2)
+// // task 3
+
+// let joinArrow = [1, 3, 5, 10, 20]
+
+// const summary = joinArrow.join(' ')
+// console.log(summary);
+
+// task 4
+
+// [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+// let mass = []
+// for (let index = 0; index < 3; index++) {
+//     let mass2 = []
+
+//     for (let i = 0; i < 4; i++) {
+//         mass2.push(1)
 
 
-
-}
-console.log(mass);
+//     }
+//     mass.push(mass2)
 
 
 
-// task 5
+// }
+// console.log(mass);
 
-let pushArrow = [1, 1, 1]
-pushArrow.push(2, 2, 2)
 
-console.log(pushArrow);
 
-// task 6 ???
+// // task 5
 
-let arr = [9, 8, 7, 'a', 6, 5]
+// let pushArrow = [1, 1, 1]
+// pushArrow.push(2, 2, 2)
 
-sortArr = arr.sort()
-popArr = sortArr.pop()
-console.log(popArr);
-console.log(sortArr);
+// console.log(pushArrow);
 
-// task 7
+// // task 6 ???
+
+// let arr = [9, 8, 7, 'a', 6, 5]
+
+// sortArr = arr.sort()
+// popArr = sortArr.pop()
+// console.log(popArr);
+// console.log(sortArr);
+
+// // task 7
 
 
 
@@ -355,67 +355,119 @@ console.log(sortArr);
 
 // numsCheck()
 
-// task 8
+// // task 8
 
-let string = 'abcdef'
-let arrStr = string.split('')
-console.log(arrStr);
-revStr = arrStr.reverse()
-console.log(revStr)
-let jArr = revStr.join('')
-console.log(jArr);
+// let string = 'abcdef'
+// let arrStr = string.split('')
+// console.log(arrStr);
+// revStr = arrStr.reverse()
+// console.log(revStr)
+// let jArr = revStr.join('')
+// console.log(jArr);
 
-// task 9
+// // task 9
 
-[[1, 2, 3,],[4, 5, 6]]
+// [[1, 2, 3,],[4, 5, 6]]
 
-let arrow = [[1, 2, 3,],[4, 5, 6]]
-let str = arrow.join(',').split(',')
-console.log(str);
+// let arrow = [[1, 2, 3,],[4, 5, 6]]
+// let str = arrow.join(',').split(',')
+// console.log(str);
 
-// task 10
+// // task 10
 
-let arrow = [6, 2, 3, 6, 5, 3, 4]
-for (let i = 0; i < arrow.length; i++) {
-  if (i < arrow.length - 1) {
-    console.log(arrow[i] + arrow[i + 1]);
-  } else {
-    console.log(arrow[i])
-  }
+// let arrow = [6, 2, 3, 6, 5, 3, 4]
+// for (let i = 0; i < arrow.length; i++) {
+//   if (i < arrow.length - 1) {
+//     console.log(arrow[i] + arrow[i + 1]);
+//   } else {
+//     console.log(arrow[i])
+//   }
 
+// }
+
+
+
+// // task 11
+
+
+// let array = [2, 3, 4, 5]
+// let array2 = array.map(el => el ** 2)
+// console.log(array2);
+
+// // task 12
+
+
+// let someWords = ['hi', 'how', 'are', 'you', '?']
+// let symbolWords
+// function countingSymbols() {
+//   let wordsSplit = someWords.map(el => (el.split('')))
+//   symbolWords = wordsSplit.map(el => el.length)
+//   return symbolWords
+// }
+
+// countingSymbols(someWords)
+// console.log(symbolWords)
+
+// task 13
+
+// let numbers = [1, 2, -10, 5, -7, 8, -2]
+//  let negative
+// function negativeNumbers () {
+//   negative = numbers.filter(el => (el < 0))
+//   return negative
+// }
+// negativeNumbers(numbers)
+
+// console.log(negative);
+
+
+// Homework 7
+
+// task 1
+
+let programm = 'js'
+programm = programm.toUpperCase()
+console.log(programm);
+
+// task 2
+
+function searchStart(arrow, word) {
+   arrow.forEach(product => {
+    if (product.toLowerCase().startsWith(word.toLowerCase())) {
+      console.log(product);
+    }
+  });
 }
 
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
 
+// task 3
 
-// task 11
+let num = 32.58884
 
+num = Math.floor(num)
+console.log(num);
 
-let array = [2, 3, 4, 5]
-let array2 = array.map(el => el ** 2)
-console.log(array2);
+num = Math.ceil(num)
+console.log(num);
 
-// task 12
+num = Math.round(num)
+console.log(num);
 
+// task 4
 
-let someWords = ['hi', 'how', 'are', 'you', '?']
-let symbolWords
-function countingSymbols() {
-  let wordsSplit = someWords.map(el => (el.split('')))
-  symbolWords = wordsSplit.map(el => el.length)
-  return symbolWords
+let someNumbers =  [52, 53, 49, 77, 21, 32]
+
+let min = Math.min.apply(null, someNumbers)
+
+console.log(min);
+
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+// task 5
+
+function getRandom(minValue, maxValue) {
+  console.log(Math.round((Math.random() * (maxValue - minValue)) + minValue));
 }
 
-countingSymbols(someWords)
-console.log(symbolWords)
-
-task 13
-
-let numbers = [1, 2, -10, 5, -7, 8, -2]
- let negative
-function negativeNumbers () {
-  negative = numbers.filter(el => (el < 0))
-  return negative
-}
-negativeNumbers(numbers)
-
-console.log(negative);
+getRandom(-234, -456)
