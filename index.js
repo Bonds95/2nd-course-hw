@@ -370,18 +370,14 @@
 // [[1, 2, 3,],[4, 5, 6]]
 
 // let arrow = [[1, 2, 3,],[4, 5, 6]]
-// let str = arrow.join(',').split(',')
+// let str = arrow.flat()
 // console.log(str);
 
 // // task 10
 
 // let arrow = [6, 2, 3, 6, 5, 3, 4]
-// for (let i = 0; i < arrow.length; i++) {
-//   if (i < arrow.length - 1) {
-//     console.log(arrow[i] + arrow[i + 1]);
-//   } else {
-//     console.log(arrow[i])
-//   }
+// for (let i = 0; i < arrow.length - 1; i++) {
+//   console.log(arrow[i] + arrow[i + 1]);
 
 // }
 
@@ -400,8 +396,7 @@
 // let someWords = ['hi', 'how', 'are', 'you', '?']
 // let symbolWords
 // function countingSymbols() {
-//   let wordsSplit = someWords.map(el => (el.split('')))
-//   symbolWords = wordsSplit.map(el => el.length)
+//   symbolWords = someWords.map(el => el.length)
 //   return symbolWords
 // }
 
@@ -421,53 +416,143 @@
 // console.log(negative);
 
 
-// Homework 7
+// // Homework 7
 
-// task 1
+// // task 1
 
-let programm = 'js'
-programm = programm.toUpperCase()
-console.log(programm);
+// let programm = 'js'
+// programm = programm.toUpperCase()
+// console.log(programm);
 
-// task 2
+// // task 2
 
-function searchStart(arrow, word) {
-   arrow.forEach(product => {
-    if (product.toLowerCase().startsWith(word.toLowerCase())) {
-      console.log(product);
-    }
-  });
-}
+// function searchStart(arrow, word) {
+//    arrow.forEach(product => {
+//     if (product.toLowerCase().startsWith(word.toLowerCase())) {
+//       console.log(product);
+//     }
+//   });
+// }
 
-searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
 
-// task 3
+// // task 3
 
-let num = 32.58884
+// let num = 32.58884
 
-num = Math.floor(num)
-console.log(num);
+// num = Math.floor(num)
+// console.log(num);
 
-num = Math.ceil(num)
-console.log(num);
+// num = Math.ceil(num)
+// console.log(num);
 
-num = Math.round(num)
-console.log(num);
+// num = Math.round(num)
+// console.log(num);
 
-// task 4
+// // task 4
 
-let someNumbers =  [52, 53, 49, 77, 21, 32]
+// let someNumbers =  [52, 53, 49, 77, 21, 32]
 
-let min = Math.min.apply(null, someNumbers)
+// let min = Math.min.apply(null, someNumbers)
 
-console.log(min);
+// console.log(min);
 
-console.log(Math.max(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
 
-// task 5
+// // task 5
 
-function getRandom(minValue, maxValue) {
-  console.log(Math.round((Math.random() * (maxValue - minValue)) + minValue));
-}
+// function getRandom(minValue, maxValue) {
+//   console.log((Math.random() * (maxValue - minValue)) + minValue);
+// }
 
-getRandom(-234, -456)
+// getRandom(1, 10)
+
+
+// // task 6
+
+// function getRandomArrNumbers(num) {
+
+//     const arrowLength = Math.floor(num / 2)
+//     const arrow = []
+
+//     for (let i = 0; i < arrowLength; i++) {
+//         arrow.push(Math.floor(Math.random() * (num + 1)))
+
+//     }
+//     console.log(arrow);
+// }
+// getRandomArrNumbers(12)
+
+// // task 7
+
+// function getNumbers(minValue, maxValue) {
+//     console.log(Math.round((Math.random() * (maxValue - minValue)) + minValue));
+//   }
+
+//   getNumbers(7, 12)
+
+// // task 8
+
+// let currentDate = new Date();
+// console.log(currentDate);
+
+
+// // task 9
+
+// let currentDate = new Date();
+// let day = currentDate.getDate()
+// currentDate.setDate(day + 73)
+// console.log(currentDate)
+
+// // task 10
+
+
+
+// function getDateInRussian(myDate) {
+//     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
+
+//     const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+//         "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"]
+
+//     const min = myDate.getMinutes()
+//     const sec = myDate.getSeconds()
+//     // if (min < 10) {
+//     //     min = ('0' + min)
+//     // }
+
+//     // if (sec < 10) {
+//     //     sec = ('0' + sec)
+//     // }
+//     // почему-то не работает
+
+//     return console.log(
+//         `Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - это ${days[myDate.getDay()]} \nВремя: ${myDate.getHours()} : ${min} : ${sec}`
+//     );
+
+// }
+
+
+// getDateInRussian(new Date())
+
+// // task 11
+
+// function fruitsGame(fruits) {
+
+//     fruits = fruits.sort(() => Math.random() - 0.5)
+
+//     alert(fruits)
+//     let answer1 = prompt('Чему равнялся первый элемент массива?')
+//     let answer2 = prompt('Чему равнялся последний элемент массива?')
+
+//     if (answer1 == fruits[0].toLowerCase() && answer2 == fruits[6].toLowerCase()) {
+//         alert('Правильно!')
+
+//     } else if (answer1 == fruits[0].toLowerCase() || answer2 == fruits[6].toLowerCase()) {
+//         alert('Вы были близки к победе')
+
+//     } else if (answer1 !== fruits[0].toLowerCase() || answer2 !== fruits[6].toLowerCase()) {
+//         alert('Неудача, попробуйте еще раз')
+//     }
+
+// }
+// fruitsGame(['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'])
