@@ -416,6 +416,71 @@
 // console.log(negative);
 
 
+// // task 14
+
+// let arrow = []
+// let arrow2 = []
+// let arrowLength = 10
+
+// let randomArrow = () => {
+//     for (let i = 0; i < arrowLength; i++) {
+//         arrow.push(Math.round(Math.random() * 10))
+//     }
+//     return console.log(arrow);
+// }
+// randomArrow()
+
+// for (let i = 0; i < arrowLength; i++) {
+
+//     if (arrow[i] % 2 == 0) {
+//         arrow2.push(arrow[i])
+//     }
+
+// }
+
+// console.log(arrow2);
+
+// let evenArrow = (callback) => {
+//     let arrow2 = []
+//     for (let i = 0; i < arrowLength; i++) {
+//         if (callback[i] % 2 == 0) {
+//             arrow2.push(callback[i])
+//         }
+//     }
+//     return console.log(arrow2);
+// }
+
+// evenArrow(randomArrow)
+
+// // task 15
+
+// let randomArr = []
+// arrLength = 6
+
+// let getRandomArr = () => {
+//     for (let i = 0; i < arrLength; i++) {
+//         randomArr.push(Math.round(Math.random() * (10 - 1) + 1))
+
+//     }
+//     return console.log(randomArr);
+// }
+// getRandomArr()
+
+// function getMiddle(array) {
+//     let sum = 0
+
+//     for (let i = 0; i < arrLength; i++) {
+//         sum = sum + array[i]
+
+//     }
+//     let middle = sum/arrLength
+
+//     return console.log(middle);;
+// }
+
+// getMiddle(randomArr)
+
+
 // // Homework 7
 
 // // task 1
@@ -425,16 +490,18 @@
 // console.log(programm);
 
 // // task 2
-
+// let newArrow = []
 // function searchStart(arrow, word) {
 //    arrow.forEach(product => {
 //     if (product.toLowerCase().startsWith(word.toLowerCase())) {
-//       console.log(product);
+//        newArrow.push(product)
+//        console.log(newArrow);
 //     }
 //   });
+  
 // }
 
-// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ки')
 
 // // task 3
 
@@ -453,16 +520,16 @@
 
 // let someNumbers =  [52, 53, 49, 77, 21, 32]
 
-// let min = Math.min.apply(null, someNumbers)
+// let min = Math.min(...someNumbers)
 
 // console.log(min);
 
-// console.log(Math.max(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(...someNumbers));
 
 // // task 5
 
 // function getRandom(minValue, maxValue) {
-//   console.log((Math.random() * (maxValue - minValue)) + minValue);
+//   console.log(Math.round((Math.random() * (maxValue - minValue)) + minValue));
 // }
 
 // getRandom(1, 10)
@@ -556,3 +623,81 @@
 
 // }
 // fruitsGame(['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'])
+
+
+// Homework 8
+
+// // task 1
+
+
+// function getSum(array) {
+//     let sum = 0
+//     for (let i = 0; i < array.length; i++) {
+//         sum += Math.round(array[i])
+
+//     }
+//     return sum;
+// }
+
+// function getMult(array) {
+
+//     return Math.round(array.reduce((total, amount) => total * amount))
+// }
+
+// function getResult(array, callback) {
+
+//     console.log(callback(array));
+// }
+
+// getResult([3, 4, 2, 6], getSum)
+// getResult([3, 4, 2, 6], getMult)
+
+
+// // task 2
+
+// function compareUserAge(a, b) {
+//     if (a.age > b.age) return 1;
+//     if (a.age < b.age) return -1;
+//     return 0;
+// }
+
+
+
+// const users = [
+//     { name: 'Jon', age: 22 },
+//     { name: 'Richard', age: 18 },
+//     { name: 'Anton', age: 32 },
+//     { name: 'Lida', age: 23 },
+//     { name: 'Bob', age: 44 }
+// ];
+
+// users.sort(compareUserAge)
+// console.log(users);
+
+// // task 3
+
+// const array1 = [1, '4', 9, 'two']
+// const array2 = [1, '4', false, 9, 'two']
+
+
+// let reversArr = (arr) => {
+//    let arrReversed = arr.reverse()
+//    console.log(arrReversed);
+//    return arrReversed
+    
+// }
+
+// let toNumber = (arr) => {
+//    arr = arr.map(el => {return +el}).filter(el => {return !Number.isNaN(el)})
+//    console.log(arr);
+//    return arr
+// }
+
+// function each(arr, callback) {
+//     callback(arr)
+// }
+
+// each(array1, reversArr)
+// each(array2, toNumber)
+
+
