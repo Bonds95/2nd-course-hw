@@ -498,7 +498,7 @@
 //        console.log(newArrow);
 //     }
 //   });
-  
+
 // }
 
 // searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ки')
@@ -649,8 +649,9 @@
 //     console.log(callback(array));
 // }
 
-// getResult([3, 4, 2, 6], getSum)
+
 // getResult([3, 4, 2, 6], getMult)
+// setTimeout(getResult, 1000, [3, 4, 2, 6], getSum)
 
 
 // // task 2
@@ -684,7 +685,7 @@
 //    let arrReversed = arr.reverse()
 //    console.log(arrReversed);
 //    return arrReversed
-    
+
 // }
 
 // let toNumber = (arr) => {
@@ -697,7 +698,42 @@
 //     callback(arr)
 // }
 
-// each(array1, reversArr)
-// each(array2, toNumber)
 
+// setTimeout(each, 2000, array1, reversArr)
+// setTimeout(each, 3000, array2, toNumber)
+
+// // task 4
+
+// const timer = (deadline) => {
+
+//     let idTimeout = setInterval(() => {
+//         console.log(new Date());
+//     }, 3000)
+//     setTimeout(() => {
+//         clearTimeout(idTimeout)
+//         console.log('30 seconds left');
+//     }, 1000 * deadline)
+// }
+
+// timer(30)
+
+// // task 5
+
+// function calling() {
+//     console.log('Звоню!')
+// };
+
+// function beeps(callback) {
+//     setTimeout(() => {
+//         console.log('Идут гудки...')
+//         callback()
+//     }, 1000);
+// }
+
+// function talk() {
+//  console.log('Разговор')
+// }
+
+// calling();
+// beeps(talk);
 
